@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Le Big Three</title>
+    <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body>
+    <header>
+      <h1>Le Big Three des Chicago Bulls</h1>
+    </header>
+
+    <nav class="menu">
+    <ul class="link-menu">
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">Effectif</a></li>
+      <li><a href="#">Saison</a></li>
+      
+    </ul>
+
+        <!-- Un formulaire de recherche est une autre façon de naviguer de
+            façon non-linéaire dans un site. -->
+        <form class="search-menu">
+      <input class="input-texte" type="search" name="q" placeholder="Voir un match">
+      <input class="btn-submit" type="submit" value="Regarder!">
+        </form>
+    </nav>
+
+    <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="img/Jordan.jpg" style="width: 100%;height:250px" />
+            <div class="text">Jordan</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="Rodman.jpg />
+      <div class="text">Rodman</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="img/Pippen.jpg" style="width: 100%;height:250px" />
+      <div class="text">Pippen</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+    <div style="text-align: center;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+
+    <!-- Ici nous mettons le contenu de la page -->
+    <main>
+
+    <!-- Il contient un article -->
+    <article>
+      <h2>Qu'est ce que le Big Three</h2>
+      <p>Le Big Three est un terme utilisé pour désigner trois joueurs d'exception jouant dans une même équipe de NBA.</p>
+
+      <h3>Le big Three des Chicago Bulls</h3>
+      <p>Desormais parlons du trio.</p>
+      <p>Le trio des Bulls de Chicago est composé de Michael Jordan, Scottie Pippen et Dennis Rodman.Leur association permet à la franchise de remporter trois titres consécutifs, en 1996, 1997 et 1998.</p>
+    </article>
+
+    </main>
+  </body>
+</html>
+
+
