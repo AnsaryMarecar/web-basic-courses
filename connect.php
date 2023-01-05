@@ -11,6 +11,7 @@
             
             // Vérification de la connexion
             if($connect->connect_error){
+				echo "<li>Aucune température de trouvée</li>";
                 die('Erreur, impossibilité de se connecter. Erreur affichée : ' .$connect->connect_error);
             }else{	
 				echo 'Connexion établie';
@@ -20,7 +21,7 @@
 				
 				// Afficher les températures issues de la requête de lecture
 				foreach ($requete as $ligne) {
-					echo " Tepérature mesurée : " . $ligne['temperature_value'] . "°C \n";
+					echo "<li> Tepérature mesurée : " . $ligne['temperature_value'] . "°C </li>";
 				}
 			}
 			
