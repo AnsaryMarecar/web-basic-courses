@@ -37,7 +37,7 @@
 			<h2>Lister les températures : </h2>
 			<ul class="liste-relation">
 				<?php 
-					//include('connect.php'); 
+					//include('list_temperature.php'); 
 					echo "."; 
 				?>
 			</ul>

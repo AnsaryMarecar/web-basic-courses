@@ -12,18 +12,20 @@
         //Bind our values to our parameters (we called them :make and :model).
         $statement->bindValue(':temperature_value', htmlspecialchars( $temperature_value );
 
-        //Execute the statement and insert our values.
+        //Execute the statement and insert our values.																																																																																						
         $statement_executed = $statement->execute();
 			
-		
 		if ($statement_executed) {
 		  echo "New temperature record added successfully";
-		  
 		} 
 		else {
-		  echo "Error: " . $request_text . "<br>" . mysqli_error($db_connect);
+		  echo "Error: " . $request_text . "<br>".$connect->connect_error);
 		}
 	}
+	
+	// Fermeture de la connexion
+	$connect->close();
+	
 	else{
 		exit();
 	}
