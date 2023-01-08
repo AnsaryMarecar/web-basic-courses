@@ -37,12 +37,13 @@
 			<h2>Lister les températures : </h2>
 			<ul class="liste-relation">
 				<?php 
-					//include('../dossier/fichier.php'); 
+					//include('connect.php'); 
 					echo "."; 
 				?>
 			</ul>
       </div>
 	  
+	  <!-- Formulaire d'ajout de température -->
 	  <div class="form">
 		<form action="add_temperature.php" method="get">
 			<div>
