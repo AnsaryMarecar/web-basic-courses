@@ -47,11 +47,7 @@
 	  <div class="form">
 		<form action="add_temperature.php" method="get">
 			<div>
-				<label for="say">Ajouter température</label>
-				<input name="say" id="say" value="Salut">
-			</div>
-			<div>
-				<label for="to">Indiquer la température</label>
+				<label for="to">Indiquer la température à ajouter</label>
 				<input type="number" required name="temperature_value" value="0">
 			</div>
 			<div>

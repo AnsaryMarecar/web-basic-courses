@@ -10,7 +10,7 @@
         $statement = $connect->prepare($request_text);
 
         //Bind our values to our parameters (we called them :make and :model).
-        $statement->bindValue(':temperature_value', htmlspecialchars( $temperature_value );
+        $statement->bindValue(':temperature_value', htmlspecialchars( $temperature_value ));
 
         //Execute the statement and insert our values.																																																																																						
         $statement_executed = $statement->execute();
