@@ -4,24 +4,28 @@
 	$temperature_cold = 18;
 	$temperature_hot = 22;
 				
-	// Requête de lecture
-				
-	$request_text = "SELECT temperature_value FROM temperature ORDER BY temperature";
-	$statement = $connect->query($request);
-	foreach  ($statement as $row) {
-				
-		// Afficher les températures issues de la requête de lecture
-		IF($row['temperature_value']< $temperature_cold ){
-			echo "<li class=""> Température mesurée : " . $row['temperature_value'] . "°C </li>";
+	// read request
+	$request_text = "SELECT temperature_value,temperature_timestamp FROM t_temperature ORDER BY temperature_id DESC";
+	$statement = $connect->query($request_text);
+	$rows = $statement->fetchAll();
+	foreach  ($rows as $row) {
+		
+		
+		$temperature_value=(string)$row['temperature_value'];
+		$temperature_timestamp=$row['temperature_timestamp'];
+		// print 
+		IF($row['temperature_value'] < $temperature_cold ){
+			echo "<tr class='backblue'><td> ". $temperature_value . "°C </td><td> ".$temperature_timestamp." </td></td>";
 		}
-		ELSE IF ($row['temperature_value']> $temperature_cold && $row['temperature_value']< $temperature_hot){
-			echo "<li class=""> Température mesurée : " . $row['temperature_value'] . "°C </li>";
+		ELSE IF ($row['temperature_value']> $temperature_cold AND $row['temperature_value']< $temperature_hot){
+			echo "<tr class='backgreen'><td> ". $temperature_value . "°C </td><td> ".$temperature_timestamp." </td></td>";
 		}
 		ELSE {
-			echo "<li class=""> Température mesurée : " . $row['temperature_value'] . "°C </li>";
+			echo "<tr class='backred'><td> ". $temperature_value . "°C </td><td> ".$temperature_timestamp." </td></td>";
 		}
 				
 	}			
-	// Fermeture de la connexion
-	$connect->close();
+	// close connection
+	$connect->query('KILL CONNECTION_ID()');
+	$connect = null;
 ?>

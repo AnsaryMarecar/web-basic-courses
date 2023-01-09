@@ -1,16 +1,17 @@
 <?php 
 	include('db_connect.php');
-	if(isset($_GET['subject'])){
-		$temperature_value = $_GET['subject'];
+	if(isset($_GET['temperature_value'])){
 		
-		// Requête de lecture
-		$request_text = "INSERT INTO t_sensor (temperature_value) VALUES (:temperature_value) ";
+		$temperature_value = (double) htmlspecialchars($_GET['temperature_value']);
+		
+		// Read our request
+		$request_text = "INSERT INTO t_temperature (temperature_value) VALUES (:temperature_value) ";
 		
 		//Prepare our statemen.
         $statement = $connect->prepare($request_text);
 
         //Bind our values to our parameters (we called them :make and :model).
-        $statement->bindValue(':temperature_value', htmlspecialchars( $temperature_value ));
+        $statement->bindValue(':temperature_value',  $temperature_value );
 
         //Execute the statement and insert our values.																																																																																						
         $statement_executed = $statement->execute();
@@ -19,14 +20,18 @@
 		  echo "New temperature record added successfully";
 		} 
 		else {
-		  echo "Error: " . $request_text . "<br>".$connect->connect_error);
+		  echo "Error: " . $request_text . "<br>".$connect->connect_error;
 		}
+		
+		// Close our connection
+		$connect->query('KILL CONNECTION_ID()');
+		$connect = null;
 	}
-	
-	// Fermeture de la connexion
-	$connect->close();
-	
 	else{
+		echo "error SQL statement";
+		// Close our connection
+		$connect->query('KILL CONNECTION_ID()');
+		$connect = null;
 		exit();
 	}
 ?>

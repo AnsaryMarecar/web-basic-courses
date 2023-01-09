@@ -4,6 +4,23 @@ body {
   background-color:#90EE90;
 }
 
+.backblue {
+	background-color: blue;
+	color:white;
+}
+
+.backred {
+	background-color: red;
+	color:white;
+}
+
+.backgreen {
+	background-color: green;
+	color:white;
+}
+
+
+
 .sender-column {
   text-align: right;
 }
@@ -71,7 +88,7 @@ footer{
   text-align: center;
   line-height: 3;
   color: black;
-  padding : 20px;
+  padding : 8px;
 }
 
 .link-menu li:last-child a {

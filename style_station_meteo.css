@@ -1,0 +1,104 @@
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color:#90EE90;
+}
+
+.backblue {
+	background-color: blue;
+	color:white;
+}
+
+.backred {
+	background-color: red;
+	color:white;
+}
+
+.backgreen {
+	background-color: green;
+	color:white;
+}
+
+.form{
+	width:90%;
+	background-color:yellow;
+	padding: 10px;
+}
+
+footer{
+	background-color:red;
+	width:90%;
+	color:white;
+	padding:10px;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+h1,h2,h3,h4 {
+	color: white;
+}
+p{
+	text-align:justify;
+}
+
+.btn-submit{
+	background-color: red;
+	color:white;
+}
+input{
+	border-radius:none;
+	padding: 8px;
+}
+
+.menu{
+	background: black;
+	padding: 2px;
+}
+
+.link-menu {
+  list-style-type : none;
+  list-style: none;
+}
+
+.search-menu,.link-menu,.link-menu li{
+	display : inline-block;	
+}
+.link-menu li {
+	vertical-align : left;
+	padding: 2px;
+}
+
+
+
+.link-menu li a {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 0.625%;
+  text-align: center;
+  line-height: 3;
+  color: black;
+  padding : 8px;
+}
+
+.link-menu li:last-child a {
+  margin-right: 0;
+}
+
+.link-menu li a:link, .link-menu li a:visited,.link-menu li a:focus {
+  background: WHITE;
+}
+
+.link-menu li a:hover {
+  background: #90EE90;
+}
+
+.link-menu li a:active {
+  background: red;
+  color: white;
+}
