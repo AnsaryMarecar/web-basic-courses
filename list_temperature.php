@@ -26,6 +26,6 @@
 				
 	}			
 	// close connection
-	$connect->query('KILL CONNECTION_ID()');
-	$connect = null;
+	//$connect->query('KILL CONNECTION_ID()');
+	//$connect = null;
 ?>

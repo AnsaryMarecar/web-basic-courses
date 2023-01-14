@@ -24,14 +24,14 @@
 		}
 		
 		// Close our connection
-		$connect->query('KILL CONNECTION_ID()');
-		$connect = null;
+		//$connect->query('KILL CONNECTION_ID()');
+		//$connect = null;
 	}
 	else{
 		echo "error SQL statement";
 		// Close our connection
-		$connect->query('KILL CONNECTION_ID()');
-		$connect = null;
+		//$connect->query('KILL CONNECTION_ID()');
+		//$connect = null;
 		exit();
 	}
 ?>
