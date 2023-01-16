@@ -21,18 +21,23 @@
 		$temperature_timestamp		= $row['temperature_timestamp']		;	// Récupération du TIMESTAMP courante
 		
 		// Afficher la donnée
-		echo "<tr class=''><td> ". $temperature_value . "°C </td><td> ".$temperature_timestamp." </td></td>";		
+		echo "<tr class=''><td> ". $temperature_string_value . "°C </td><td> ".$temperature_timestamp." </td></td>";		
 		
 		// SI $temperature_double_value < $temperature_cold ALORS  
 			// Afficher la donnée
+                        //echo "<tr class=''><td> ". $temperature_string_value . "°C </td><td> ".$temperature_timestamp." </td></td>";		
+		
 		// FERMER LA CONDITION
 		
-		// SI $temperature_double_value > $temperature_cold ET $temperature_double_value < $temperature_hot ALORS  
+		// Else if ($temperature_double_value > $temperature_cold ET $temperature_double_value < $temperature_hot){ // SI $temperature_double_value > $temperature_cold ET $temperature_double_value < $temperature_hot ALORS  
 			// Afficher la donnée
-		// FERMER LA CONDITION
+                        // echo "<tr class=''><td> ". $temperature_string_value . "°C </td><td> ".$temperature_timestamp." </td></td>";		
+		
+		// } // FERMER LA CONDITION
 		
 		// SINON ALORS  
 			// Afficher la donnée
+                        // echo "<tr class=''><td> ". $temperature_string_value . "°C </td><td> ".$temperature_timestamp." </td></td>";		
 		// FERMER LA CONDITION
 		
 		
