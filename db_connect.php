@@ -4,7 +4,7 @@
     $server_name = 'localhost';
 	$username = 'root';
 	$username_password = '';
-	$db_name = 'db_sensor';
+	$db_name = 'db_capteur';
 	
 	try{
 		// Connect to the database
