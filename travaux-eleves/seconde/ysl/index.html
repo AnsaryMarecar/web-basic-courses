@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Saint Laurent</title>
+    <link rel="stylesheet" href="style_lyna.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    
+
+    <!-- Les trois lignes ci-dessous sont un correctif pour que la sémantique
+          HTML5 fonctionne correctement avec les anciennes versions de
+          Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- Voici notre en-tête principale utilisée dans toutes les pages
+          de notre site web -->
+    <header>
+      <h1>Yves Saint Laurent</h1>
+    </header>
+
+    <nav class="menu">
+		<ul class="link-menu">
+			<li><a href="https://www.ysl.com/fr-fr/search?cgid=new-arrivals-spring-23">colection</a></li>
+			<li><a href="https://www.ysl.com/fr-fr/boutique-en-ligne-femme/new---summer-22">woman</a></li>
+			<li><a href="https://www.ysl.com/fr-fr/boutique-en-ligne-homme/new---summer-22</">men</a></li>
+			<li><a href="https://www.parisfashionweek2023.com/home">FWS2023</a></li>
+		</ul>
+
+        <!-- Un formulaire de recherche est une autre façon de naviguer de
+            façon non-linéaire dans un site. -->
+        <form class="search-menu">
+			<input class="input-texte" type="search" name="q" placeholder="Rechercher">
+			<input class="btn-submit" type="submit" value="YSL ">
+        </form>
+    </nav>
+
+    <div class="slideshow-container">
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 2</div>
+			<img src="ysl.jpg" style="width: 100%; height:250px" />
+			<div class="text"></div>
+		</div>
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 2</div>
+			<img src="YSL 2.jpg" style="width: 100%;height:300px" />
+			<div class="text">
+			</div>
+		</div>
+		
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+    <div style="text-align: center;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+	
+	<div class="global">
+		<div class="container gauche">
+		
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/R7TFCq-2RmA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
+		<div class="container droite"><p class="justifie">Le mardi 23 septembre, la maison Saint Laurent a conclu la deuxième journée de la fashion week de Paris printemps-été 2023 avec un défilé de 49 silhouettes affûtées.
+		<br />Une collection sublime qui fait honneur à l'adn stylistique de la griffe de mode. 
+		La saison estivale prochaine, il y a des chances pour que les looks de cette collection Saint Laurent soient de tous les moodboards. </p>
+	</div>
+	</div>
+	<!-- Ici nous mettons le contenu de la page -->
+    <main>
+
+		<!-- Il contient un article -->
+		<article>
+			<h2>Saint Laurent, la force de l'opulence et de la liberté</h2>
+			<p>"On va créer une maison de couture, toi et moi, et tu la dirigeras", dit Yves Saint Laurent à Pierre Bergé au début des années 1960, quelques temps après avoir quitté la direction artistique de Christian Dior, où il connut un succès immense. C’est donc en juillet 1961, en ayant débauché Claude Licard, Gabrielle Buchaert et le mannequin Victoire Doutreleau, trois collaborateurs de la maison Dior, et grâce au soutien du milliardaire américain J. Mack Robinson, que la maison de couture Yves Saint Laurent s’installe rue de la Boëtie, à Paris.Cinq mois plus tard, pour l’ouverture officielle de la maison, le couturier présente sa première collection haute couture dans un hôtel particulier au 30bis rue Spontini, où la marque s’est désormais installée. Au même moment, le logo aux trois lettres "YSL", imbriquées est dessiné par l’illustrateur et graphiste Cassandre</p>
+
+			<h3>De haute couture à prêt-porter de luxe</h3>
+			<p>Yves Saint Laurent commence à laisser s’exprimer son génie et présente en juillet 1965 la collection Mondrian. Un an plus tard, il invente la femme moderne en l’habillant d’un smoking, ce qui fera scandale mais sera l’un des plus grands succès du couturier, puis d’un tailleur pantalon ou encore d’une saharienne en 1967, et enfin d’une combinaison pantalon en 1968.</p>
+			<p>Mais alors que les ventes sont en baisse, la haute couture n’étant pas rentable, Yves Saint Laurent se lance dans le "prêt-à-porter des couturiers", comme l’ont fait avant lui Pierre Cardin et la maison Courrèges, avec une ligne baptisée "Saint Laurent rive gauche". Grâce à ce prêt-à-porter luxueux et à l’ouverture d’un réseau de boutiques franchisées à travers le monde, l’entreprise rapporte enfin de l’argent, quinze ans après son lancement. </p>
+		</article>
+		
+				<table>
+				<tr class="back-noir">
+				
+				<td> SUPERMODEL OF 2022</td>
+				
+				<td>SUPERMODEL OF 2021</td> 
+				</tr>
+				<tr>
+				<td>Bella Hadid</td>
+				<td>Irina Shayk</td>
+				</tr>
+				</table>
+				
+				<ul>
+				  <i>prochaine évenement yves saint laurent:
+				  <li>MET GALA </li>
+				  <li>défilé tokyo S24</li>
+				  <li>festival de Cannes </li>
+				  <li>Luxe & Pop Paris Luxe </li>
+				</ul>
+
+      <!-- Le contenu « à côté » peut aussi être intégré dans le contenu
+            principal -->
+      <aside>
+			<h2>Les internautes ont aussi aimées</h2>
+			<ul class="liste-relation">
+				  <li><a href="https://www.parisfashionweek2023.com/home">fashion week S23</a></li>
+				  <li><a href="https://www.wmagazine.com/fashion/bella-hadid-yves-saint-laurent-dior-1959-vintage-gown">Bella Hadid porte une robe YSL datant de 1960</a></li>
+				  <li><a href="https://fr.louisvuitton.com/fra-fr/produits/lv-x-yk-sac-alma-bb-monogram-nvprod4120038v?campaign=sem_LV_FLG_FRA_ALWON_MIXT_OTHER_OnGoing_EC_BRAN_GSHO_MUL_FRA_EUR_NOMT_Prio-2-ROAS&msclkid=19da7084f17b14a8aa0b1340f30729dd&utm_source=bing&utm_medium=cpc&utm_campaign=LV_FLG_FRA_ALWON_MIXT_MULTI_OnGoing_EC_SHOP_BISHO_MUL_FRA_EUR_NOMT_Catchall&utm_term=4575548933396374&utm_content=All%20products">Collection Louis Vuitton 2023</a></li>
+				  <li><a href="https://www.palaisgalliera.paris.fr/fr/yves-saint-laurent-1971-la-collection-scandale#:~:text=Le%2029%20janvier%201971%2C%20Yves%20Saint%20Laurent%20pr%C3%A9sente,ces%20r%C3%A9f%C3%A9rences%20au%20Paris%20de%20l%E2%80%99Occupation%20font%20scandale.">collection scandale</a></li>
+				  <li><a href="https://pop-rnb.com/2021/09/17/irina-shayki-n-prada-saint-laurent-dior-and-bottega-veneta-clothes/">Irina shayk et YSL, une grande histoire d'amour</a></li>
+			</ul>
+		
+    			
+      </aside>
+
+    </main>
+
+    <!-- Et voici notre pied de page utilisé sur toutes les pages du site -->
+    <footer class="footer.</p>
+    </footer>
+
+  </body>
+</html>
